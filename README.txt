@@ -1,16 +1,17 @@
-﻿Wypakuj cały plik "WPP Hellion_X.XX.rar" do wybranego przez siebie folderu
+﻿Wypakuj cały plik "WPP Hellion_X.XX.rar"/"WPP Hellion_X.XX.zip" do wybranego przez siebie folderu
 
-Utwórz skrót od pliku "main.exe" nastepnie wklej go gdze zechcesz
+Utwórz skrót od pliku "WPP Hellion" nastepnie wklej go gdze zechcesz
 
 
+GOTOWE!!!
 
-GOTOWE
 
 Do otwierania/używania programu używaj stworzonego przez siebie skrótu
+Miłego użytkowania :)
 
 
-
-
+Wrazie problemów lub pytań zgłaszaj je na serwerze Discord na kanale (┇❔┇questions)
+Link do serwera: https://discord.gg/3E7qw4A6u9
 
 
 
