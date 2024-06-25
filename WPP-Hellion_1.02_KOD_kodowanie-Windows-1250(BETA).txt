@@ -4,7 +4,6 @@
 #include <cstdlib>
 #include <bitset>
 #include <fstream>
-#include <conio.h>
 #include <string.h>
 #include <cmath>
 #include <cstring>
@@ -12,10 +11,11 @@
 #include <ctime>
 #include <algorithm>
 #include <vector>
-#include <windows.h>
 #include <cstdio>
 #include <locale.h>
 #include <iomanip>
+#include "windows.h"
+#include "conio.h"
 
 using namespace std;
 //Wersja programu WPP Hellion 1.02
@@ -533,7 +533,7 @@ cout<<wyswietl_tekst(2,5);//"Podaj 2 liczbę: ";
 cin>>b;
 
 system("cls");
-cout<<wyswietl_tekst(2,6)<<'["<<a-b<<"]";//Wynik to
+cout<<wyswietl_tekst(2,6)<<"["<<a-b<<"]";//Wynik to
 /*
 //--------------------------------------------------------------------------------wpisanie liczb
 for(;;)
@@ -752,7 +752,7 @@ char wybor, ascii_kod2;
 int ascii_kod=0;
 
 
-cout<<<<endl;//"W którą stronę chcesz dokonać zamiany?"
+cout<<wyswietl_tekst(2,19)<<endl;//"W którą stronę chcesz dokonać zamiany?"
 cout<<wyswietl_tekst(2,20)<<char(26)<<wyswietl_tekst(2,21)<<endl;//"1-Tekst "<<char(26)<<" ASCII"<<endl;
 cout<<wyswietl_tekst(2,22)<<char(26)<<wyswietl_tekst(2,23)<<endl;//"2-ASCII "<<char(26)<<" Tekst"<<endl;
 cout<<wyswietl_tekst(2,24)<<endl;//"3-Wypisanie wszystkich znaków z tablicy"
@@ -882,7 +882,7 @@ cout<<endl<<endl<<wyswietl_tekst(2,41)<<endl;//" Kontakt:"
 cout<<" Discord server: ==Legion==   on chanel: questions"<<endl;
 cout<<" Email: miley.shimada@gmail.com"<<endl;
 
-cout<<endl<<endl<<endl<<endl<<endl<<wyswietl_tekst(2,42)wyswietl_tekst(,)<<endl;//" Gdy kurs walut jest nieakualny przejdz do pliku (kurs_walut.txt) i popraw wartości na aktualne."
+cout<<endl<<endl<<endl<<endl<<endl<<wyswietl_tekst(2,42)<<endl;//" Gdy kurs walut jest nieakualny przejdz do pliku (kurs_walut.txt) i popraw wartości na aktualne."
 cout<<wyswietl_tekst(2,43)<<endl;//" Zalecane jest skorzystanie z linku zapisanym w pliku z walutami po skopiowaniu wartości kursów"
 cout<<wyswietl_tekst(2,44)<<endl;//" należy zamienić ',' na '.' i zapisać plik."
 
@@ -1024,7 +1024,7 @@ private:
         cin>>suma;
         system("cls");
         gotoweeuro=suma/ile_euro;
-        cout<<wyswietl_tekst(3,7)<<"["<<gotoweeuro<<"] EUR"<<endl;//Wynik w Euro: 
+        cout<<wyswietl_tekst(3,7)<<"["<<gotoweeuro<<"] EUR"<<endl;//Wynik w Euro:
         gotoweeuro=0; suma=0;
     }
 
@@ -1058,7 +1058,7 @@ private:
         cin>>suma;
         system("cls");
         gotoweeuro=suma*ile_euro;
-        cout<<wyswietl_tekst(3,11)<<"["<<gotoweeuro<<"] PLN"<<endl;//Wynik PLN +- 2PLN: 
+        cout<<wyswietl_tekst(3,11)<<"["<<gotoweeuro<<"] PLN"<<endl;//Wynik PLN +- 2PLN:
         gotoweeuro=0; suma=0;
     }
 
@@ -1068,7 +1068,7 @@ private:
         cin>>suma;
         system("cls");
         gotowydolar=suma*ile_dolar;
-        cout<<wyswietl_tekst(3,11)<<"["<<gotowydolar<<"] ZŁ"<<endl;//Wynik PLN +- 2PLN: 
+        cout<<wyswietl_tekst(3,11)<<"["<<gotowydolar<<"] ZŁ"<<endl;//Wynik PLN +- 2PLN:
         gotowydolar=0; suma=0;
     }
 
@@ -1078,7 +1078,7 @@ private:
         cin>>suma;
         system("cls");
         gotowyfunt=suma*ile_funt;
-        cout<<wyswietl_tekst(3,11)<<"["<<gotowyfunt<<"] ZŁ"<<endl;//Wynik PLN +- 2PLN: 
+        cout<<wyswietl_tekst(3,11)<<"["<<gotowyfunt<<"] ZŁ"<<endl;//Wynik PLN +- 2PLN:
         gotowyfunt=0; suma=0;
     }
 };
@@ -1160,7 +1160,7 @@ void tekst_klikniecia_w_milisekundzie() // podawanie ile klikniec w jednej milis
         cout<<endl<<"     "<<wyswietl_tekst(4,3);//"*===========================================================================*";
         cout<<endl<<"     "<<wyswietl_tekst(4,4)<<(char)znak;//"|  Aktualny przycisk uruchamiajacy automatyczne klikanie myszy to: "
         cout<<endl<<"     "<<wyswietl_tekst(4,5);if(rodzaj_uruchamiania==1){cout<<wyswietl_tekst(4,6);}else{cout<<wyswietl_tekst(4,7);}//"|  Aktualny styl uruchamiania auto klikania to: " <"Trzymanie klawisza" "Włącz / Wyłącz klikanie"
-        
+
         cout<<endl<<"     "<<wyswietl_tekst(4,12);//"|  Przycisk powrotu do menu głównego: x";
 }
 
@@ -1516,7 +1516,7 @@ void MENU()
 	cout<<endl<<"     "<<wyswietl_tekst(4,47);//"*===========================================================================*";
     cout<<endl<<"     "<<wyswietl_tekst(4,4)<<(char)znak;//"|  Aktualny przycisk uruchamiajacy automatyczne klikanie myszy to: "
     cout<<endl<<"     "<<wyswietl_tekst(4,5);if(rodzaj_uruchamiania==1){cout<<wyswietl_tekst(4,6);}else{cout<<wyswietl_tekst(4,7);}//"|  Aktualny styl uruchamiania auto klikania to: " <"Trzymanie klawisza" "Włącz / Wyłącz klikanie"
-    cout<<endl<<"     "<<wyswietl_tekst(4,8);if(zabezpieczenie==1){cout<<wyswietl_tekst(4,9);}else if(zabezpieczenie==2){cout<<wyswietl_tekst(4,10);}else if(zabezpieczenie==3){cout<<wyswietl_tekst(4,11);}//"|  Aktualny poziom zabezpieczenia: " "Brak" "Średni" "Zaawansowany"	
+    cout<<endl<<"     "<<wyswietl_tekst(4,8);if(zabezpieczenie==1){cout<<wyswietl_tekst(4,9);}else if(zabezpieczenie==2){cout<<wyswietl_tekst(4,10);}else if(zabezpieczenie==3){cout<<wyswietl_tekst(4,11);}//"|  Aktualny poziom zabezpieczenia: " "Brak" "Średni" "Zaawansowany"
     cout<<endl<<"     "<<wyswietl_tekst(4,48)<<char(auto_bot_loop_onoff_klawisz);//"|  Klawisz odpowiedzialny za włączenie pętli: "
     cout<<endl<<"     "<<wyswietl_tekst(4,49)<<z_jakiego_pliku_brac_dane;//"|  Ostatnio uzywany plik z zapisanymi wektorami: "
     cout<<endl<<"     "<<wyswietl_tekst(4,50);//"|  Nazwy wszystki zapisanych plików z wektorami:"
@@ -1705,18 +1705,18 @@ Sleep(5);
 system("cls");
 cout<<endl<<wyswietl_tekst(6,20)<<endl;//MENU GŁÓWNE
 cout<<"           "<<wyswietl_tekst(6,39)<<endl;//+==============================================+
-cout<<"           "wyswietl_tekst(6,21)<<endl;//1 - Dodawanie
-cout<<"           "wyswietl_tekst(6,22)<<endl;//2 - Odejmowanie
-cout<<"           "wyswietl_tekst(6,23)<<endl;//3 - Mnożenie
-cout<<"           "wyswietl_tekst(6,24)<<endl;//4 - Dzielenie
-cout<<"           "wyswietl_tekst(6,25)<<endl;//5 - Potęgowanie
-cout<<"           "wyswietl_tekst(6,26)<<endl;//6 - Pierwiastkowanie
-cout<<"           "wyswietl_tekst(6,27)<<data<<wyswietl_tekst(6,38)<<endl;//7 - Waluty  (Kurs walut z: )        |
-cout<<"           "wyswietl_tekst(6,28)<<endl;//8 - Zmiana tekstu na kod binarny
-cout<<"           "wyswietl_tekst(6,29)<<endl;//9 - Tablica ASCII
-cout<<"           "wyswietl_tekst(6,30)<<endl;//% - Działania procentowe
-cout<<"           "wyswietl_tekst(6,31)<<endl;//? - Pomoc
-cout<<"           "wyswietl_tekst(6,32)<<endl;//m - Strona Główna
+cout<<"           "<<wyswietl_tekst(6,21)<<endl;//1 - Dodawanie
+cout<<"           "<<wyswietl_tekst(6,22)<<endl;//2 - Odejmowanie
+cout<<"           "<<wyswietl_tekst(6,23)<<endl;//3 - Mnożenie
+cout<<"           "<<wyswietl_tekst(6,24)<<endl;//4 - Dzielenie
+cout<<"           "<<wyswietl_tekst(6,25)<<endl;//5 - Potęgowanie
+cout<<"           "<<wyswietl_tekst(6,26)<<endl;//6 - Pierwiastkowanie
+cout<<"           "<<wyswietl_tekst(6,27)<<data<<wyswietl_tekst(6,38)<<endl;//7 - Waluty  (Kurs walut z: )        |
+cout<<"           "<<wyswietl_tekst(6,28)<<endl;//8 - Zmiana tekstu na kod binarny
+cout<<"           "<<wyswietl_tekst(6,29)<<endl;//9 - Tablica ASCII
+cout<<"           "<<wyswietl_tekst(6,30)<<endl;//% - Działania procentowe
+cout<<"           "<<wyswietl_tekst(6,31)<<endl;//? - Pomoc
+cout<<"           "<<wyswietl_tekst(6,32)<<endl;//m - Strona Główna
 cout<<"           "<<wyswietl_tekst(6,39)<<endl;//+==============================================+
 cout<<"            "<<wyswietl_tekst(6,33);
 wybor=getch();
