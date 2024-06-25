@@ -1,0 +1,227 @@
+<ogolne>
+<1> Press ENTER to return to the Main Menu
+<2> Press ENTER to continue.
+<3> Press ENTER to return to the menu.
+<4> Press ENTER to continue the process.
+<ustawienia>
+<1>File not found [
+<2>] to load.
+<3>Press ENTER to create it automatically.
+<4>File created.
+<5>Settings file not found to load.
+<6>Settings file will be automatically created with default settings.
+<7>Program settings file is outdated.
+<8>The program will automatically fix the problem. This will result in the loss of previously saved user settings.
+<9>The program will automatically reload when the process is finished.
+<10>SUCCESS process completed successfully
+<11>Choose what you want to change
+<12>1 - Change the key to start auto-clicking
+<13>2 - Change text color
+<14>3 - Program operation type (Auto Clicker clicking/holding key)
+<15>4 - Change the key to enable Auto Bot loop
+<16>5 - Change program language
+<17>--------------Enter key--------------
+<18>When it comes to mouse keys, type:
+<19>; - left mouse button
+<20>[ - middle mouse button
+<21>' - right mouse button
+<22>Choose a color
+<23>0. This text is silver
+<24>1. This text is red
+<25>2. This text is green
+<26>3. This text is blue
+<27>4. This text is intense red
+<28>5. This text is intense green
+<29>6. This text is intense blue
+<30>7. This text is purple
+<31>8. This text is pink
+<32>9. This text is gold
+<33>10. This text is cyan
+<34>11. This text is light blue
+<35>1 - Hold key for program to work.
+<36>2 - On / Off automatic clicking with key.
+<37>Enter number: 
+<38>The entered number is not valid, please enter again!
+<WPL>
+<1>Enter 
+<2> number (0-end of number entry): 
+<3>Result: 
+<4>Enter 1 number: 
+<5>Enter 2 number: 
+<6>The result is 
+<7>Divide: 
+<8>We do not divide by 0
+<9>Enter the base of the power: 
+<10>Enter the exponent: 
+<11> to the power of 
+<12> equals: 
+<13>The function is currently unavailable.
+<14>Work is in progress, it will be active as soon as possible.
+<15>Enter a word without spaces: 
+<16>Select display type
+<17>Print the text with [,]? YES[y] / NO[n]: 
+<18>In binary code: 
+<19>Which way do you want to make the change?
+<20>1-Text 
+<21> ASCII
+<22>2-ASCII 
+<23> Text
+<24>3-Display all characters from the array
+<25>Enter character: 
+<26>Word: 
+<27>          In ASCII code it is the number: 
+<28>Enter a number in the range 0-255: 
+<29>Number 
+<30> from ASCII code is the character: 
+<31> shift by one row (enter)
+<32> Zero/Null
+<33> ENTER
+<34> BACKSPACE/left arrow/Escape(ESC)
+<35> Space
+<36>Enter the whole: 
+<37>Enter number/percentage: 
+<38> from 
+<39> it is 
+<40> If you have any problems with the program, please report them.
+<41> Contact:
+<42> If the currency exchange rate is not up to date, go to the file (kurs_walut.txt) and adjust the values to current ones.
+<43> It is recommended to use the link saved in the currency file after copying the exchange rate values
+<44> you need to replace ',' with '.' and save the file.
+<45> Instructions:
+<46> this value should not be changed
+<47> this value should be corrected
+<48> To change the currency exchange rate date in the Main Menu, you need to change it in the file
+<49> The date will also be updated during the next update of the WPL program as well
+<50> as the currency exchange rate.
+<51> Enjoy using the program 
+<52>File created successfully.
+<obliczanie_walut>
+<1>Error opening file!!!   File named (kurs_walut.txt)
+<2>Most likely there is no file in the program folder.
+<3>File will be automatically created with basic data.
+<4>File opened correctly.
+<5>Choose which side you want to count the currency
+<6>Enter the amount in PLN: 
+<7>Result in Euro: 
+<8>Result in Dollars: 
+<9>Result in Pounds: 
+<10>Enter the amount in EUR: 
+<11>Result in PLN +- 2 PLN: 
+<12>Enter the amount $: 
+<13>Enter the amount in Pounds: 
+<AUTO_CLICKER>
+<1>Enter how many milliseconds to wait for the next click
+<2>(ms / 0 = click frequency to processor clock): 
+<3>*===========================================================================*
+<4>|  The current key to start automatic mouse clicking is: 
+<5>|  Current auto-clicking style is: 
+<6>Hold key
+<7>On / Off clicking
+<8>|  Current security level: 
+<9>None
+<10>Medium
+<11>Advanced
+<12>|  Return to the main menu button: x
+<13>Enter the number of clicks in 1 ms: 
+<14>Choose the method of recording movements, remember that no method records time intervals between clicks.
+<15>1 - Set mouse position points and clicks by pressing [g] and [n] keys.
+<16>2 - Automatically set mouse position every 
+<17>But also remember that time is not saved in this option.
+<18>Enter the name of your vector file: 
+<19>The file name is too short or has [0] as the first letter in the name.
+<20>Press ENTER to enter the name again.
+<21>To finish recording vectors, press [x].
+<22>Press [g] to set a vector where the mouse will be positioned on the screen.
+<23>Press [n] to perform a click action at this point.
+<24>1 - Enter time intervals and start the bot.
+<25>2 - Change the file from which vectors and click time are taken.
+<26>Currently/last used file with saved mouse vectors is: 
+<27>List of available files with saved mouse vectors:
+<28>!!!NO SAVED VECTORS!!!
+<29>Enter the bot operating speed (minimum 1 ms). 
+<30>Enter the interval between clicks (minimum 1 ms). 
+<31>Enter the interval between loops if you start the loop (minimum 1 ms). 
+<32>Key responsible for starting the bot: 
+<33>Key responsible for enabling the loop: 
+<34>End and return to the menu: x
+<35>Choose from which file the Bot should take data.
+<36>List of available files with saved mouse vectors:
+<37>------------------------Choose an option------------------------
+<38>      1 - Click per millisecond/second.
+<39>	  2 - Number of clicks in 1 millisecond.
+<40>	  3 - Auto Bot clicks in given vectors on the screen.
+<41>	  4 - Settings.
+<42>	  5 - Setting Bot click vectors on the screen.
+<43>	  6 - Reset to initial settings.
+<44>	  7 - What about securities?.
+<45>         m - Main Page.
+<46> ms, then press [n] to make a click at this point.
+<47>*===========================================================================*
+<48>|  Key responsible for enabling the loop: 
+<49>|  Last used file with saved mouse vectors: 
+<50>|  Names of all saved files with vectors:
+<51>Security protects the program from detection by Anti-Cheat programs.
+<52>Below is an explanation of how this security works exactly
+<53>NONE: 
+<54>Does not change anything, clicks at perfect time intervals which increases the chance of detection by Anti-Cheat.
+<55>MEDIUM: 
+<56>
+<57>ADVANCED: 
+<58>
+<Kal_czasu>
+<1>Enter the number of years: 
+<2>Enter the number of days: 
+<3>Enter the number of hours: 
+<4>Enter the number of minutes: 
+<5>Enter the number of seconds: 
+<6>Number of years: 
+<7>  [Years.Days]
+<8>Number of days: 
+<9>  [Days.Hours]
+<10>Number of hours: 
+<11>  [Hours.Minutes]
+<12>Number of minutes: 
+<13>  [Minutes.Seconds]
+<14>Number of seconds: 
+<15>Number of milliseconds: 
+<16>Press ENTER to count again || x-end the program
+<main>
+<1>Loading...
+<2>Settings class assigned
+<3>Program settings loaded
+<4>Auto Clicker class assigned
+<5>WPL class assigned
+<6>Currency calculator loaded
+<7>Currency rates loaded
+<8>Read names of files with vectors correctly
+<9>Which was the last file with vectors used loaded
+<10>Time calculator loaded
+<11>Loading completed.
+<12> Program Version: 
+<13>+================ Select Program ==============+
+<14>|    1 - Multifunctional calculator            |
+<15>|    2 - Auto Clicker                          |
+<16>|    3 - Time unit calculator                  |
+<17>|    4 - Settings                              |
+<18>|    r - Reset to default settings             |
+<19>x - Exit program
+<20>                             MAIN MENU
+<21>|  1 - Addition                                  |
+<22>|  2 - Subtraction                               |
+<23>|  3 - Multiplication                            |
+<24>|  4 - Division                                  |
+<25>|  5 - Exponentiation                            |
+<26>|  6 - Root extraction                           |
+<27>|  7 - Currency  (Exchange rate from: 
+<28>|  8 - Convert text to binary code               |
+<29>|  9 - ASCII table                               |
+<30>|  % - Percentage operations                     |
+<31>|  ? - Help                                      |
+<32>|  m - Main Page                                 |
+<33>Write, action number: 
+<34>----Action code is not correct!!! Make a selection again----
+<35>----Program number is not correct!!! Make a selection again----
+<36>+===============================================+
+<37>|                                               |
+<38>)        |
+<39>+==============================================+
