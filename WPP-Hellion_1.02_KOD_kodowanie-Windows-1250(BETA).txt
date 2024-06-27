@@ -31,7 +31,7 @@ int auto_bot_loop_onoff_klawisz; // klawisz do wlaczenia zapetlania auto bota
 int milisekundy=0;
 unsigned int ile_plikow_wektorow_licznik=0;
 unsigned short klikniecia=0;
-string data, z_jakiego_pliku_brac_dane;
+string data, z_jakiego_pliku_brac_dane, folder_pliki_wektorow="Pliki_Wektorow_Save";
 vector <string> wszystkie_pliki_tab;
 const string pliki_wektorow_myszy="nazwy_plikow_z_zapisanymi_wektorami.txt";
 string jaki_jezyk_programu="2";
@@ -110,20 +110,28 @@ else if(jaki_jezyk_programu=="2"){return language_ENG[ktory_program][ktory_wiers
 
 void wymiary_okna_szer_wys(int szerokosc_okna, int wysokosc_okna)
 {
-HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE); // potrzebujesz uchwytu
-HANDLE hOut; // to wklejac w przypadu gdy wymiary okna nie sa zmieniane za pomoca funkcji tylko recznie
-SMALL_RECT sr;
- // Wymiary okna
-    //HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE); // potrzebujesz uchwytu
-    //SMALL_RECT sr;
+    HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE); // Uchwyć uchwyt do konsoli
+    if (handle == INVALID_HANDLE_VALUE) {
+        cerr<<"Nie można uzyskać uchwytu do konsoli."<<endl;
+    }
 
+    // Ustaw rozmiar bufora konsoli
+    COORD bufferSize;
+    bufferSize.X = szerokosc_okna + 1; // szerokość bufora
+    bufferSize.Y = wysokosc_okna + 1;  // wysokość bufora
+    if (!SetConsoleScreenBufferSize(handle, bufferSize)) {
+        cerr<<"Nie można ustawić rozmiaru bufora konsoli."<<endl;
+    }
+
+    // Ustaw wymiary okna konsoli
+    SMALL_RECT sr;
     sr.Left = 0;
     sr.Top = 0;
-    sr.Right = szerokosc_okna; // szerokość
-    sr.Bottom = wysokosc_okna; // wysokość
-    SetConsoleWindowInfo(handle,true,&sr);
-    CONSOLE_SCREEN_BUFFER_INFO sbi;
-    GetConsoleScreenBufferInfo(handle, &sbi);
+    sr.Right = szerokosc_okna - 1; // szerokość okna
+    sr.Bottom = wysokosc_okna - 1; // wysokość okna
+    if (!SetConsoleWindowInfo(handle, TRUE, &sr)) {
+        cerr<<"Nie można ustawić wymiarów okna konsoli."<<endl;
+    }
 }
 
 class USTAWIENIA  //wyswietl_tekst(1,)
@@ -184,10 +192,37 @@ void kolor_tekstu_z_ustawien()
     }
 }
 //----------------------------------------------------------------------------------------
+bool folderExists(const string& foldername) { // czy folder istnieje
+    DWORD fileAttributes = GetFileAttributes(foldername.c_str());
+    if (fileAttributes == INVALID_FILE_ATTRIBUTES) {
+        return false; // Folder nie istnieje
+    }
+    if (fileAttributes & FILE_ATTRIBUTE_DIRECTORY) {
+        return true; // Folder istnieje
+    }
+    return false; // To nie jest folder
+}
+void Folder_create(const string& foldername)
+{
+char buffer[MAX_PATH];
+GetCurrentDirectory(MAX_PATH,  buffer); //cout<<"Bierzący folder: "<<endl;
+
+if(CreateDirectory(foldername.c_str(), NULL)||ERROR_ALREADY_EXISTS==GetLastError())
+{cout<<"Utworzono folder o nazwie: "<<foldername<<"  w miejscu: "<<buffer;}else{cerr<<"Nie utworzono folderu.";}
+Sleep(100);
+}
+
 void zczytanie_nazw_plikow_do_ustawiania_myszy()
 {
     fstream nazwy_plikow;
     string linia;
+
+
+
+    if (folderExists(folder_pliki_wektorow))
+        {cout<<"Folder istnieje."<<endl;}
+    else{Folder_create(folder_pliki_wektorow);}
+
     nazwy_plikow.open(pliki_wektorow_myszy);
     wszystkie_pliki_tab.clear();
     if(nazwy_plikow.fail())
@@ -865,7 +900,7 @@ if(cala_calosc==true && cala_procent==true)
 
 void pomoc()
 {
-wymiary_okna_szer_wys(118,31);
+wymiary_okna_szer_wys(124,31);
 
 cout<<wyswietl_tekst(2,40)<<endl;//" W razie problemów z programem proszę o zgłaszanie ich."
 cout<<endl<<endl<<wyswietl_tekst(2,41)<<endl;//" Kontakt:"
@@ -1079,6 +1114,7 @@ private:
 class AUTO_CLICKER  //wyswietl_tekst(4,)
 {
 private:
+USTAWIENIA ustawienia;
 const short usp=1;
 ofstream zapis_nowych_wektorow_myszy;
 fstream wektory_ustawiania_myszy;
@@ -1334,7 +1370,9 @@ void tekst_klikniecia_w_milisekundzie() // podawanie ile klikniec w jednej milis
 //--------------------------------------------------------------------------------------------------------------------wyswietl_tekst(,)  126 linia w pliku
 void nagrywanie_pozycji_myszy()
 {
-    wymiary_okna_szer_wys(120,7);
+    int Max=wyswietl_tekst(4,14).length();
+    if(wyswietl_tekst(4,14).length()<wyswietl_tekst(4,15).length()){Max=wyswietl_tekst(4,15).length();}else if(wyswietl_tekst(4,15).length()<wyswietl_tekst(4,16).length()){Max=wyswietl_tekst(4,16).length();}
+    wymiary_okna_szer_wys(Max+5,7);
     POINT cursorPos;
     char wybor_metody;
     string nazwa_pliku;
@@ -1348,7 +1386,7 @@ system("cls");
 
     cout<<wyswietl_tekst(4,18); cin>>nazwa_pliku;//"Podaj nazwę pliku swoich wektorów: "
     if(nazwa_pliku.length()<2 || nazwa_pliku=="0"){cout<<wyswietl_tekst(4,19)<<endl<<wyswietl_tekst(4,20);getchar();getchar();goto nowa_nazwa;}//"Nazwa pliku jest za krótka lub ma w nazwie [0] jako pierwszą literę."<<endl<<"Naciśnij ENTER aby podać nazwę ponownie."
-    system("cls"); zapis_nowych_wektorow_myszy.open(nazwa_pliku);
+    system("cls"); zapis_nowych_wektorow_myszy.open(folder_pliki_wektorow+"\\"+nazwa_pliku);
     zapis_nazwy_pliku_z_wektorami(nazwa_pliku);
     cout<<wyswietl_tekst(4,21)<<endl<<endl;//"Aby zakończyć nagrywanie wektorów naciśnij [x]."
 
@@ -1373,7 +1411,6 @@ system("cls");
             }
         }
 Sleep(50);
-USTAWIENIA ustawienia;
 ustawienia.zczytanie_nazw_plikow_do_ustawiania_myszy();
 Sleep(50);
 }
@@ -1403,13 +1440,13 @@ system("cls");
         string linia;
         unsigned int ile_max_krokow_licznik=0, wiersz_tablica=0;
         //wczytywanie wektorów do tablicy
-        wektory_zczytanie_pliku.open(z_jakiego_pliku_brac_dane);
+        wektory_zczytanie_pliku.open(folder_pliki_wektorow+"\\"+z_jakiego_pliku_brac_dane);
         do{getline(wektory_zczytanie_pliku, linia);wiersz_tablica++;}while(!wektory_zczytanie_pliku.eof()); wektory_zczytanie_pliku.close();wiersz_tablica--;
         int auto_bot_wektory_kroki[2][wiersz_tablica+1]; // x y   układ tablicy pierwszy slot odpowiada za ilosć danych czyli mamy 2 (x i y) drugi slot za ilość kroków wielkość Y
         bool zapisywac_dane=false;
         unsigned short x_czy_y=0;
         string do_konwersji;
-        wektory_zczytanie_pliku.open(z_jakiego_pliku_brac_dane);
+        wektory_zczytanie_pliku.open(folder_pliki_wektorow+"\\"+z_jakiego_pliku_brac_dane);
 
         do{
             getline(wektory_zczytanie_pliku, linia);
