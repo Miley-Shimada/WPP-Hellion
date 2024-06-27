@@ -147,7 +147,7 @@
 <35>Choose from which file the Bot should take data.
 <36>List of available files with saved mouse vectors:
 <37>------------------------Choose an option------------------------
-<38>      1 - Click per millisecond/second.
+<38>     1 - Click per millisecond/second.
 <39>	  2 - Number of clicks in 1 millisecond.
 <40>	  3 - Auto Bot clicks in given vectors on the screen.
 <41>	  4 - Settings.
@@ -198,30 +198,30 @@
 <10>Time calculator loaded
 <11>Loading completed.
 <12> Program Version: 
-<13>+================ Select Program ==============+
-<14>|    1 - Multifunctional calculator            |
-<15>|    2 - Auto Clicker                          |
-<16>|    3 - Time unit calculator                  |
-<17>|    4 - Settings                              |
-<18>|    r - Reset to default settings             |
+<13>+================ Select Program ===============+
+<14>|    1 - Multifunctional calculator             |
+<15>|    2 - Auto Clicker                           |
+<16>|    3 - Time unit calculator                   |
+<17>|    4 - Settings                               |
+<18>|    r - Reset to default settings              |
 <19>x - Exit program
-<20>                             MAIN MENU
-<21>|  1 - Addition                                  |
-<22>|  2 - Subtraction                               |
-<23>|  3 - Multiplication                            |
-<24>|  4 - Division                                  |
-<25>|  5 - Exponentiation                            |
-<26>|  6 - Root extraction                           |
+<20>                                MAIN MENU
+<21>|  1 - Addition                                   |
+<22>|  2 - Subtraction                                |
+<23>|  3 - Multiplication                             |
+<24>|  4 - Division                                   |
+<25>|  5 - Exponentiation                             |
+<26>|  6 - Root extraction                            |
 <27>|  7 - Currency  (Exchange rate from: 
-<28>|  8 - Convert text to binary code               |
-<29>|  9 - ASCII table                               |
-<30>|  % - Percentage operations                     |
-<31>|  ? - Help                                      |
-<32>|  m - Main Page                                 |
+<28>|  8 - Convert text to binary code                |
+<29>|  9 - ASCII table                                |
+<30>|  % - Percentage operations                      |
+<31>|  ? - Help                                       |
+<32>|  m - Main Page                                  |
 <33>Write, action number: 
 <34>----Action code is not correct!!! Make a selection again----
 <35>----Program number is not correct!!! Make a selection again----
 <36>+===============================================+
 <37>|                                               |
-<38>)        |
-<39>+==============================================+
+<38>) |
+<39>+=================================================+
