@@ -282,7 +282,7 @@ void zapis_nowych_ustawien()
     char co_zmienic;
 
 
-    wymiary_okna_szer_wys(74,7);
+    wymiary_okna_szer_wys(80,10);
     cout<<wyswietl_tekst(1,11);//"Wybierz co chcesz zmienic";
     cout<<endl<<wyswietl_tekst(1,12);//"1 - Zmiana klawisza uruchamiajacego auto klikanie";
     cout<<endl<<wyswietl_tekst(1,13);//"2 - Zmiana koloru tekstu";
@@ -320,6 +320,7 @@ void zapis_nowych_ustawien()
         system("cls");
         int wybor_koloru;
         cout<<wyswietl_tekst(1,22)<<endl<<endl;//Wybierz kolor
+        wymiary_okna_szer_wys(38,15);
 
     hOut = GetStdHandle( STD_OUTPUT_HANDLE );
 
@@ -397,7 +398,7 @@ void zapis_nowych_ustawien()
         cout<<wyswietl_tekst(1,17)<<endl;//"--------------Podaj klawisz--------------"
         cout<<endl<<"1 - Polski";
         cout<<endl<<"2 - English";
-        wybor_uniwersalne_do_all_INT=getch();
+        wybor_uniwersalne_do_all_INT=getch()-48;
         tablica[6]=wybor_uniwersalne_do_all_INT;
     }
 
@@ -864,23 +865,13 @@ if(cala_calosc==true && cala_procent==true)
 
 void pomoc()
 {
-    HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE); // potrzebujesz uchwytu
-    SMALL_RECT sr;
-
-    sr.Left = 0;
-    sr.Top = 0;
-    sr.Right = 100;
-    sr.Bottom = 30;
-    SetConsoleWindowInfo(handle,true,&sr); // ustawiasz szerokość okna na 50 x 50 (w szerokościach i wysokościach znaku pojedynczego a nie w pikselach)
-    CONSOLE_SCREEN_BUFFER_INFO sbi; // struktura opisująca okno
-    GetConsoleScreenBufferInfo(handle, &sbi); // pobieranie informacji o oknie
-
-
+wymiary_okna_szer_wys(118,31);
 
 cout<<wyswietl_tekst(2,40)<<endl;//" W razie problemów z programem proszę o zgłaszanie ich."
 cout<<endl<<endl<<wyswietl_tekst(2,41)<<endl;//" Kontakt:"
 cout<<" Discord server: ==Legion==   on chanel: questions"<<endl;
-cout<<" Email: miley.shimada@gmail.com"<<endl;
+cout<<" Server link: https://discord.gg/3E7qw4A6u9"<<endl;
+
 
 cout<<endl<<endl<<endl<<endl<<endl<<wyswietl_tekst(2,42)<<endl;//" Gdy kurs walut jest nieakualny przejdz do pliku (kurs_walut.txt) i popraw wartości na aktualne."
 cout<<wyswietl_tekst(2,43)<<endl;//" Zalecane jest skorzystanie z linku zapisanym w pliku z walutami po skopiowaniu wartości kursów"
@@ -896,7 +887,7 @@ cout<<wyswietl_tekst(2,50)<<endl;//" również kurs walut."
 
 
 
-cout<<endl<<endl<<endl<<wyswietl_tekst(2,51)<<char(3)<<" :)";//" Miłego korzystania z programu "
+cout<<endl<<endl<<endl<<wyswietl_tekst(2,51)<<char(3)<<" :)"<<endl;//" Miłego korzystania z programu "
 }
 
 void walut_create_file()
@@ -1096,7 +1087,6 @@ const short spoczynek=1;
 bool auto_bot_loop=false;
 
 public:
-
 /*void test()
 {
 keybd_event(VK_BACK, 0, KEYEVENTF_EXTENDEDKEY, 0);
@@ -1109,7 +1099,7 @@ void jedno_klikniecie() //urzywane do procedur ponizej
 mouse_event(MOUSEEVENTF_LEFTDOWN, x, y, 0, 0);
 mouse_event(MOUSEEVENTF_LEFTUP, x, y, 0, 0);
 }
-string zapis_nazwy_pliku_z_wektorami(string name_file)
+void zapis_nazwy_pliku_z_wektorami(string name_file)
 {
 unsigned int licznik_tymczasowy=0;
 fstream zczytaj;
@@ -1688,15 +1678,12 @@ system("cls");
 if(wybor_programu=='1')
 {
     char wybor='/0';
-    USTAWIENIA ustawienia;
-
-
 
 for(;;)
 {
 wybor='\0';
 Sleep(5);
-wymiary_okna_szer_wys(68,20);
+wymiary_okna_szer_wys(wyswietl_tekst(6,39).length()+20,20);
 Sleep(5);
 ustawienia.kolor_tekstu_z_ustawien();
 Sleep(5);
@@ -1816,8 +1803,8 @@ cout<<endl<<endl<<wyswietl_tekst(0,1);
 break;
 }
 getch();
-wymiary_okna_szer_wys(68,20);
-ustawienia.kolor_tekstu_z_ustawien();
+//wymiary_okna_szer_wys(68,20);
+//ustawienia.kolor_tekstu_z_ustawien();
 }
 }
 //==========================================================================================================================================================================
@@ -1831,7 +1818,8 @@ char wybor;
 
 menu:
 Sleep(100);
-wymiary_okna_szer_wys(85,27);
+//wymiary_okna_szer_wys(85,27);
+wymiary_okna_szer_wys(wyswietl_tekst(4,3).length()+10,ile_plikow_wektorow_licznik+27);
 
     Sleep(100);
     autoclicker.MENU(); // pokazuje poczatkowe menu programu wyboru
