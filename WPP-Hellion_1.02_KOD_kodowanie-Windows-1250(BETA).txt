@@ -36,7 +36,7 @@ vector <string> wszystkie_pliki_tab;
 const string pliki_wektorow_myszy="nazwy_plikow_z_zapisanymi_wektorami.txt";
 string jaki_jezyk_programu="2";
 bool pierwsze_wczytanie_jezyka_z_plikow=true;
-const unsigned int language_ilosc_wierszy_pliku=231; // ile jest wierszy w plikach z tlumaczeniem programu
+const unsigned int language_ilosc_wierszy_pliku=239; // ile jest wierszy w plikach z tlumaczeniem programu
 const short ile_programow=7; //ile w hellionie jest wszystkich programow (WPL, auto clicker, kalkulator czasu + OGOLNE,main,obliczanie walut)
 string language_PL[ile_programow][language_ilosc_wierszy_pliku], language_ENG[ile_programow][language_ilosc_wierszy_pliku];
 //-----------------------------------------------------------
@@ -112,25 +112,18 @@ void wymiary_okna_szer_wys(int szerokosc_okna, int wysokosc_okna)
 {
     HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE); // Uchwyć uchwyt do konsoli
     if (handle == INVALID_HANDLE_VALUE) {
-        cerr<<"Nie można uzyskać uchwytu do konsoli."<<endl;
+        cerr<<"Nie mozna uzyskac uchwytu do konsoli."<<endl;
     }
 
-    // Ustaw rozmiar bufora konsoli
-    COORD bufferSize;
-    bufferSize.X = szerokosc_okna + 1; // szerokość bufora
-    bufferSize.Y = wysokosc_okna + 1;  // wysokość bufora
-    if (!SetConsoleScreenBufferSize(handle, bufferSize)) {
-        cerr<<"Nie można ustawić rozmiaru bufora konsoli."<<endl;
-    }
 
     // Ustaw wymiary okna konsoli
     SMALL_RECT sr;
     sr.Left = 0;
     sr.Top = 0;
-    sr.Right = szerokosc_okna - 1; // szerokość okna
-    sr.Bottom = wysokosc_okna - 1; // wysokość okna
+    sr.Right = szerokosc_okna; // szerokość okna
+    sr.Bottom = wysokosc_okna; // wysokość okna
     if (!SetConsoleWindowInfo(handle, TRUE, &sr)) {
-        cerr<<"Nie można ustawić wymiarów okna konsoli."<<endl;
+        cerr<<"Nie mozna ustawic wymiarow okna konsoli."<<endl;
     }
 }
 
@@ -466,7 +459,6 @@ void reset_do_ustawien_poczatkowych()
     reset.close();
 }
 };
-
 
 
 class WPL  //wyswietl_tekst(2,)
@@ -1678,6 +1670,10 @@ cout<<wyswietl_tekst(6,1)<<endl;//"Ładowanie..."
  Kal_czasu czas;
  cout<<wyswietl_tekst(6,10)<<endl;//"Kalkulator czasu załadowany"
 
+
+ HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE); // Uchwyć uchwyt do konsoli
+ // Ustaw rozmiar bufora konsoli
+COORD bufferSize; bufferSize.X =400; bufferSize.Y =100;    if(!SetConsoleScreenBufferSize(handle, bufferSize)) {cerr<<"Nie mozna ustawic rozmiaru bufora konsoli."<<endl;}
  // ladowanie roznych ustawien klikania (przypisanie procedur jako funkcji wywolawczych)
 cout<<endl<<endl<<wyswietl_tekst(6,11)<<endl;//"Ładowanie zakończone."
 Sleep(1000);
@@ -1698,9 +1694,10 @@ cout<<"          "<<wyswietl_tekst(6,37)<<endl;//"|                             
 cout<<"          "<<wyswietl_tekst(6,14)<<endl;//"|       1 - Wielofunkcyjny kalkulator           |"
 cout<<"          "<<wyswietl_tekst(6,15)<<endl;//"|       2 - Auto Clicer                         |"
 cout<<"          "<<wyswietl_tekst(6,16)<<endl;//"|       3 - Kalkulator jednostek czasu          |"
-cout<<"          "<<wyswietl_tekst(6,17)<<endl;//"|       4 - Ustawienia                          |"
 cout<<"          "<<wyswietl_tekst(6,37)<<endl;//"|                                               |"
 cout<<"          "<<wyswietl_tekst(6,37)<<endl;//"|                                               |"
+cout<<"          "<<wyswietl_tekst(6,17)<<endl;//"|       u - Ustawienia                          |"
+cout<<"          "<<wyswietl_tekst(6,40)<<endl;//"|       ? - Pomoc / Informacje                  |"
 cout<<"          "<<wyswietl_tekst(6,18)<<endl;//"|       r - Reset do ustawień początkowych      |"
 cout<<"          "<<wyswietl_tekst(6,37)<<endl;//"|                                               |"
 cout<<"          "<<wyswietl_tekst(6,36)<<endl;//"+===============================================+"
@@ -1886,7 +1883,8 @@ if(wybor=='2') //wybor nr 2    ilosc klikniec w 1 milisekundzie
 
 if(wybor=='3') //wybor nr 3    Auto Bot klika w wcześniej zapisanych wektorach w danych plikach
 {
-autoclicker.Auto_Bot();
+    wymiary_okna_szer_wys(110,ile_plikow_wektorow_licznik+7);
+    autoclicker.Auto_Bot();
 }
 
 
@@ -1930,7 +1928,7 @@ Sleep(10);
 
 //Ustawienia
 //==========================================================================================================================================================================
-if(wybor_programu=='4')
+if(wybor_programu=='u')
 {
    ustawienia.zapis_nowych_ustawien();
    ustawienia.start_programu_zczytanie_ustawien();
@@ -1940,6 +1938,59 @@ if(wybor_programu=='r')
 {
    ustawienia.reset_do_ustawien_poczatkowych();
    ustawienia.start_programu_zczytanie_ustawien();
+   goto strona_glowna;
+}
+//==========================================================================================================================================================================
+
+
+//Pomoc / Informacje
+//==========================================================================================================================================================================
+if(wybor_programu=='?')
+{
+    wymiary_okna_szer_wys(wyswietl_tekst(6,51).length(),50);
+cout<<wyswietl_tekst(6,51)<<endl<<endl;//*====================================================================================================================*
+
+
+cout<<wyswietl_tekst(2,40)<<endl;//" W razie problemów z programem proszę o zgłaszanie ich."
+cout<<wyswietl_tekst(6,41)<<endl;//Tak samo z roznymi pytaniami piszcie na serwerze Discord (informacje ponizej).
+
+
+cout<<endl<<endl<<wyswietl_tekst(2,41)<<endl;//" Kontakt:"
+cout<<" Discord server: ==Legion==   on chanel: questions"<<endl;
+cout<<" Server link: https://discord.gg/3E7qw4A6u9"<<endl;
+
+
+cout<<endl<<endl<<endl<<endl<<endl<<wyswietl_tekst(2,42)<<endl;//" Gdy kurs walut jest nieakualny przejdz do pliku (kurs_walut.txt) i popraw wartości na aktualne."
+cout<<wyswietl_tekst(2,43)<<endl;//" Zalecane jest skorzystanie z linku zapisanym w pliku z walutami po skopiowaniu wartości kursów"
+cout<<wyswietl_tekst(2,44)<<endl;//" należy zamienić ',' na '.' i zapisać plik."
+
+
+cout<<endl<<endl<<wyswietl_tekst(2,45)<<endl;//" Instrukcja:"
+cout<<" Dolar:  "<<char(26)<<wyswietl_tekst(2,46)<<endl;//" Dolar:  "<<char(26)<<"  tej wartości nie należy zmieniać"<<endl;
+cout<<" 4.1147  "<<char(26)<<wyswietl_tekst(2,47)<<endl<<endl;//" 4.1147  "<<char(26)<<"  tą wartość należy poprawić"<<endl<<endl;
+cout<<wyswietl_tekst(2,48)<<endl;//" Aby data kursu walut w Menu Głównym została zmieniona należy ją zmienić w pliku"<<endl;
+cout<<wyswietl_tekst(2,49)<<endl;//" Data również zostanie zaktulizowana przy nastepniej aktulizacji programu WPL jak i"
+cout<<wyswietl_tekst(2,50)<<endl;//" również kurs walut."
+cout<<endl<<endl<<endl;
+
+
+cout<<wyswietl_tekst(6,42)<<endl;//Wszystkie zapisane plliki z miejscami kliknięć bota na ekranie znajdziecie w folderze (Pliki_Wektorow_Save).
+cout<<wyswietl_tekst(6,43)<<endl;//Jeśli ktoś chce usunąć nie potrzebny plik z wektorami to musi zrobić to ręcznie najpierw wchodzimy do
+cout<<wyswietl_tekst(6,44)<<endl;//folderu podanego wyżej i usuwamy niechciany plik. Następnie w głównym folderze znajduję się plik o nazwie
+cout<<wyswietl_tekst(6,45)<<endl;//(nazwy_plikow_z_zapisanymi_wektorami.txt) otwieramy go i usuwamy nazwę pliku który usuneliśmy. GOTOWE!
+cout<<endl;
+cout<<wyswietl_tekst(6,46)<<endl;//Pliki z wektorami możemy ręcznie edytować ALE ZALECAM OSTROŻNOŚĆ pozycję myszy są opisane X = <xxx>Y = <xxx>
+cout<<wyswietl_tekst(6,47)<<endl;//a moment w którym bot ma wykonać kliknięcie nazywa się "klikniecie". Więc jeśli niechcemy danej wartości albo
+cout<<wyswietl_tekst(6,48)<<endl;//chcemy pominąć dany etap wystarczy wykasować to co nas interesuje na koniec zapisać plik i gotowe.
+cout<<endl<<endl;
+
+cout<<wyswietl_tekst(6,49)<<endl;//Jeśli coś się stanie z programem albo się zawiesi najlepiej go zresetować gdy to nie pomoże to najszybciej będzie
+cout<<wyswietl_tekst(6,50)<<endl;//pobrać cały na nowo czy to z serwera Discord czy z GitHub jeśli dalej to nie pomoże poinformuj nas na serwerze DC
+
+cout<<endl<<endl<<endl<<wyswietl_tekst(2,51)<<char(3)<<" :)"<<endl;//" Miłego korzystania z programu "
+cout<<endl<<endl<<wyswietl_tekst(6,51)<<endl;//*====================================================================================================================*
+cout<<"   "<<wyswietl_tekst(0,1);
+getchar();
    goto strona_glowna;
 }
 //==========================================================================================================================================================================
