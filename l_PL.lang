@@ -1,25 +1,25 @@
 <ogolne>
-<1>NaciÂ˜nij ENTER aby wrË˜ciâ€  do Menu GÂˆË˜wnego
-<2>NaciÂ˜nij ENTER aby kontunuowaâ€ .
-<3>NaciÂ˜nij ENTER aby wrË˜ciâ€  do menu.
-<4>NaciÂ˜nij ENTER aby kontynuowaâ€  proces.
+<1>Naci˜nij ENTER aby wr¢ci† do Menu Gˆ¢wnego
+<2>Naci˜nij ENTER aby kontunuowa†.
+<3>Naci˜nij ENTER aby wr¢ci† do menu.
+<4>Naci˜nij ENTER aby kontynuowa† proces.
 <ustawienia>
 <1>Nie znaleziono pliku [
 <2>] do zaladowania.
-<3>Nacisnij ENTER aby automatycznie go utworzyâ€ .
-<4>Plik zostaÂˆ utworzony.
-<5>Nie znaleziono pliku ustawien do zaÂˆadowania.
+<3>Nacisnij ENTER aby automatycznie go utworzy†.
+<4>Plik zostaˆ utworzony.
+<5>Nie znaleziono pliku ustawien do zaˆadowania.
 <6>Plik ustawien zostanie automatycznie utworzony z zapisanymi podstawowymi ustawieniami.
-<7>Plik ustawieniÃ¤ programu jest przestarzaÂˆy.
-<8>Program automatycznie naprawi problem. Spowoduje to utrate wczeÂ˜niej zapisanych ustawieÃ¤ uÄ¾ytkownika.
-<9>Program automatycznie zaÂˆÄ„duje siÂ© na nowo gdy zakoÃ¤czy proces.
-<10>SUKCES proces zakoÃ¤czony powodzeniem
+<7>Plik ustawieniä programu jest przestarzaˆy.
+<8>Program automatycznie naprawi problem. Spowoduje to utrate wcze˜niej zapisanych ustawieä u¾ytkownika.
+<9>Program automatycznie zaˆ¥duje si© na nowo gdy zakoäczy proces.
+<10>SUKCES proces zakoäczony powodzeniem
 <11>Wybierz co chcesz zmienic
 <12>1 - Zmiana klawisza uruchamiajacego auto klikanie
 <13>2 - Zmiana koloru tekstu
-<14>3 - Rodzaj dziaÂˆania programu (Auto Clicera klikanie/trzymanie klawisza)
-<15>4 - Zmiana klawisza wÂˆÄ„czajÄ„cego pÂ©tlÂ© Auto Bota
-<16>5 - Zmiana jÂ©zyka programu
+<14>3 - Rodzaj dziaˆania programu (Auto Clicera klikanie/trzymanie klawisza)
+<15>4 - Zmiana klawisza wˆ¥czaj¥cego p©tl© Auto Bota
+<16>5 - Zmiana j©zyka programu
 <17>--------------Podaj klawisz--------------
 <18>Jesli chodzi o klawisze myszy to wpisz:
 <19>; - lewy klawiszy myszy
@@ -38,35 +38,35 @@
 <32>9.Ten napis jest ala zloty
 <33>10.Ten napis jest seledynowy
 <34>11.Ten napis jest jasno niebieski
-<35>1 - Trzymanie klawisza aby program dziaÂˆaÂˆ.
-<36>2 - WÂˆ / WyÂˆ automatyczne klikanie klawiszem.
-<37>Podaj cyfrÂ©: 
-<38>Podana cyfra jest nie prawidÂˆowa podaj ponownie!
+<35>1 - Trzymanie klawisza aby program dziaˆaˆ.
+<36>2 - Wˆ / Wyˆ automatyczne klikanie klawiszem.
+<37>Podaj cyfr©: 
+<38>Podana cyfra jest nie prawidˆowa podaj ponownie!
 <WPL>
 <1>Podaj 
-<2> liczbÂ© (0-koniec podawania liczb): 
+<2> liczb© (0-koniec podawania liczb): 
 <3>Wynik: 
-<4>Podaj 1 liczbÂ©: 
-<5>Podaj 2 liczbÂ©: 
+<4>Podaj 1 liczb©: 
+<5>Podaj 2 liczb©: 
 <6>Wynik to 
 <7>Dziele: 
 <8>Nie dzielimy przez 0
-<9>Podaj podstawÂ© potÂ©gi: 
-<10>Podaj wykÂˆadnik potÂ©gi: 
-<11> do potÂ©gi 
+<9>Podaj podstaw© pot©gi: 
+<10>Podaj wykˆadnik pot©gi: 
+<11> do pot©gi 
 <12> wynosi: 
-<13>Funkcja jest aktualnie nie dostÂ©pna.
-<14>Prace nad niÄ„ trwajÄ„, bÂ©dzie aktywna jak najszybciej to moÄ¾liwe.
+<13>Funkcja jest aktualnie nie dost©pna.
+<14>Prace nad ni¥ trwaj¥, b©dzie aktywna jak najszybciej to mo¾liwe.
 <15>Podaj wyraz bez spacji: 
-<16>Wybierz rodzaj wyÂ˜wietlenia
-<17>Wypisaâ€  napis z [,]?  TAK[t] / NIE[n]: 
+<16>Wybierz rodzaj wy˜wietlenia
+<17>Wypisa† napis z [,]?  TAK[t] / NIE[n]: 
 <18>W kodzie binarnym: 
-<19>W ktË˜rÄ„ stronÂ© chcesz dokonaâ€  zamiany?
+<19>W kt¢r¥ stron© chcesz dokona† zamiany?
 <20>1-Tekst 
 <21> ASCII
 <22>2-ASCII 
 <23> Tekst
-<24>3-Wypisanie wszystkich znakË˜w z tablicy
+<24>3-Wypisanie wszystkich znak¢w z tablicy
 <25>Podaj znak: 
 <26>Wyraz: 
 <27>          W kodzie ASCII to liczba: 
@@ -76,39 +76,39 @@
 <31> przesuniecie o jeden wiersz(enter)
 <32> Zero/Null
 <33> ENTER
-<34> BACKSPACE/strzaÂˆka zwrË˜cona w lewo/Escape(ESC)
+<34> BACKSPACE/strzaˆka zwr¢cona w lewo/Escape(ESC)
 <35> Spacja
-<36>Podaj caÂˆoÂ˜â€ : 
-<37>Podaj liczbÂ©/procent: 
+<36>Podaj caˆo˜†: 
+<37>Podaj liczb©/procent: 
 <38> z 
 <39> jest to 
-<40> W razie problemË˜w z programem proszÂ© o zgÂˆaszanie ich.
+<40> W razie problem¢w z programem prosz© o zgˆaszanie ich.
 <41> Kontakt:
-<42> Gdy kurs walut jest nieakualny przejdz do pliku (kurs_walut.txt) i popraw wartoÂ˜ci na aktualne.
-<43> Zalecane jest skorzystanie z linku zapisanym w pliku z walutami po skopiowaniu wartoÂ˜ci kursË˜w
-<44> naleÄ¾y zamieniâ€  ',' na '.' i zapisaâ€  plik.
+<42> Gdy kurs walut jest nieakualny przejdz do pliku (kurs_walut.txt) i popraw warto˜ci na aktualne.
+<43> Zalecane jest skorzystanie z linku zapisanym w pliku z walutami po skopiowaniu warto˜ci kurs¢w
+<44> nale¾y zamieni† ',' na '.' i zapisa† plik.
 <45> Instrukcja:
-<46> tej wartoÂ˜ci nie naleÄ¾y zmieniaâ€ 
-<47> tÄ„ wartoÂ˜â€  naleÄ¾y poprawiâ€ 
-<48> Aby data kursu walut w Menu GÂˆË˜wnym zostaÂˆa zmieniona naleÄ¾y jÄ„ zmieniâ€  w pliku
-<49> Data rË˜wnieÄ¾ zostanie zaktulizowana przy nastepniej aktulizacji programu WPL jak i
-<50> rË˜wnieÄ¾ kurs walut.
-<51> MiÂˆego korzystania z programu 
-<52>Plik zostaÂˆ utworzony pomyÂ˜lnie.
+<46> tej warto˜ci nie nale¾y zmienia†
+<47> t¥ warto˜† nale¾y poprawi†
+<48> Aby data kursu walut w Menu Gˆ¢wnym zostaˆa zmieniona nale¾y j¥ zmieni† w pliku
+<49> Data r¢wnie¾ zostanie zaktulizowana przy nastepniej aktulizacji programu WPL jak i
+<50> r¢wnie¾ kurs walut.
+<51> Miˆego korzystania z programu 
+<52>Plik zostaˆ utworzony pomy˜lnie.
 <obliczanie_walut>
-<1>BÂˆÄ„d w otwarciu pliku!!!   Plik o nazwie (kurs_walut.txt)
+<1>Bˆ¥d w otwarciu pliku!!!   Plik o nazwie (kurs_walut.txt)
 <2>Najprawdopodobniej nie ma pliku w folderze z programem.
 <3>Plik zostanie utworzony automatycznie z podstawowymi danymi.
 <4>Poprawne otwarcie pliku.
-<5>Dokonaj wyboru w ktË˜rÄ„ strone chcesz liczyâ€  waluty
-<6>Podaj kowtÂ© PLN: 
+<5>Dokonaj wyboru w kt¢r¥ strone chcesz liczy† waluty
+<6>Podaj kowt© PLN: 
 <7>Wynik w Euro: 
 <8>Wynik w Dolarach: 
 <9>Wynik w Funtach: 
-<10>Podaj kwotÂ© EUR: 
+<10>Podaj kwot© EUR: 
 <11>Wynik PLN +- 2 PLN: 
-<12>Podaj kwotÂ© $: 
-<13>Podaj kwotÂ© FuntË˜w: 
+<12>Podaj kwot© $: 
+<13>Podaj kwot© Funt¢w: 
 <AUTO_CLICKER>
 <1>Podaj ile czekac milisekund na nastepne klikniecie
 <2>(ms / 0=czestotliwosc klikniec do zegaru prosesora): 
@@ -116,64 +116,64 @@
 <4>|  Aktualny przycisk uruchamiajacy automatyczne klikanie myszy to: 
 <5>|  Aktualny styl uruchamiania auto klikania to: 
 <6>Trzymanie klawisza
-<7>WÂˆÄ„cz / WyÂˆÄ„cz klikanie
+<7>Wˆ¥cz / Wyˆ¥cz klikanie
 <8>|  Aktualny poziom zabezpieczenia: 
 <9>Brak
-<10>â€”redni
+<10>—redni
 <11>Zaawansowany
-<12>|  Przycisk powrotu do menu gÂˆË˜wnego: x
+<12>|  Przycisk powrotu do menu gˆ¢wnego: x
 <13>Podaj ilosc klikniec w 1 ms: 
-<14>Wybierz metodÂ© nagrywania ruchË˜w pamiÂ©taj, Ä¾e w Ä¾adnej metodzie nie nagrywa siÂ© odstÂ©pË˜w czasowych miÂ©dzy klikniÂ©ciami.
-<15>1 - RÂ©dzie ustawiaj punkty pozycji myszy oraz klikniÂ©cia poprzez naciskanie klawiszy [g] i [n].
+<14>Wybierz metod© nagrywania ruch¢w pami©taj, ¾e w ¾adnej metodzie nie nagrywa si© odst©p¢w czasowych mi©dzy klikni©ciami.
+<15>1 - R©dzie ustawiaj punkty pozycji myszy oraz klikni©cia poprzez naciskanie klawiszy [g] i [n].
 <16>2 - Automatycznie co 
-<17>Ale pamiÂ©taj teÄ¾ czas nie jest w tej opcji zapisywany.
-<18>Podaj nazwÂ© pliku swoich wektorË˜w: 
-<19>Nazwa pliku jest za krË˜tka lub ma w nazwie [0] jako pierwszÄ„ literÂ©.
-<20>NaciÂ˜nij ENTER aby podaâ€  nazwÂ© ponownie.
-<21>Aby zakoÃ¤czyâ€  nagrywanie wektorË˜w naciÂ˜nij [x].
-<22>NaciÂ˜nij [g] aby postawiâ€  wektor gdzie myszka zostanie ustawiona na ekranie.
-<23>NaciÂ˜nij [n] aby zostaÂˆa wykonana akcja klikniÂ©cia w tym momencie.
-<24>1 - Podaj odstÂ©py czasowe i uruchom bota.
-<25>2 - ZmieÃ¤ plik z ktË˜rego brane sÄ„ wektory i moment klikniÂ©cia.
-<26>Aktualnie/ostatnio wybrany/uÄ¾ywany plik z zapisanymi wektorami myszy to: 
-<27>Lista dostÂ©pnych plikË˜w z zapisanymi wektorami:
-<28>!!!BRAK ZAPISANYCH WEKTORÅ•W!!!
-<29>Podaj prÂ©dkoÂ˜â€  dziaÂˆania bota (minimum 1 ms). 
-<30>Podaj odstÂ©pny miÂ©dzy klikaniem (minimum 1 ms). 
-<31>Podaj odstÂ©py miÂ©dzy pÂ©tlami o ile danÄ„ pÂ©tlÂ© uruchomisz (minimum 1 ms). 
+<17>Ale pami©taj te¾ czas nie jest w tej opcji zapisywany.
+<18>Podaj nazw© pliku swoich wektor¢w: 
+<19>Nazwa pliku jest za kr¢tka lub ma w nazwie [0] jako pierwsz¥ liter©.
+<20>Naci˜nij ENTER aby poda† nazw© ponownie.
+<21>Aby zakoäczy† nagrywanie wektor¢w naci˜nij [x].
+<22>Naci˜nij [g] aby postawi† wektor gdzie myszka zostanie ustawiona na ekranie.
+<23>Naci˜nij [n] aby zostaˆa wykonana akcja klikni©cia w tym momencie.
+<24>1 - Podaj odst©py czasowe i uruchom bota.
+<25>2 - Zmieä plik z kt¢rego brane s¥ wektory i moment klikni©cia.
+<26>Aktualnie/ostatnio wybrany/u¾ywany plik z zapisanymi wektorami myszy to: 
+<27>Lista dost©pnych plik¢w z zapisanymi wektorami:
+<28>!!!BRAK ZAPISANYCH WEKTORàW!!!
+<29>Podaj pr©dko˜† dziaˆania bota (minimum 1 ms). 
+<30>Podaj odst©pny mi©dzy klikaniem (minimum 1 ms). 
+<31>Podaj odst©py mi©dzy p©tlami o ile dan¥ p©tl© uruchomisz (minimum 1 ms). 
 <32>Klawisz odpowiedzialny za uruchomienie bota: 
-<33>Klawisz odpowiedzialny za wÂˆÄ„czenie pÂ©tli: 
-<34>Koniec i powrË˜t do menu: x
-<35>Wybierz z ktË˜rego pliku Bot ma braâ€  dane.
-<36>Lista dostÂ©pnych plikË˜w z zapisanymi wektorami:
+<33>Klawisz odpowiedzialny za wˆ¥czenie p©tli: 
+<34>Koniec i powr¢t do menu: x
+<35>Wybierz z kt¢rego pliku Bot ma bra† dane.
+<36>Lista dost©pnych plik¢w z zapisanymi wektorami:
 <37>------------------------Wybierz opcje------------------------
-<38>     1 - KlikniÂ©cie na milisekundÂ©/sekundÂ©.
-<39>	  2 - IloÂ˜â€  klikniÂ©â€  w 1 milisekundzie.
+<38>     1 - Klikni©cie na milisekund©/sekund©.
+<39>	  2 - Ilo˜† klikni©† w 1 milisekundzie.
 <40>	  3 - Auto Bot klika w danych wektorach na ekranie.
 <41>	  4 - Ustawienia.
-<42>	  5 - Ustawianie wektorË˜w kliknieâ€  Bota na ekranie.
-<43>	  6 - Reset do ustawien poczÄ„tkowych.
+<42>	  5 - Ustawianie wektor¢w kliknie† Bota na ekranie.
+<43>	  6 - Reset do ustawien pocz¥tkowych.
 <44>	  7 - O co chodzi z zabezpieczeniami?.
-<45>         m - Strona GÂˆË˜wna.
-<46> ms ustawia pozycjÂ© myszy natomiast naciÂ˜nij [n] aby w tym miejscu zostaÂˆo wykonane klikniÂ©cie.
+<45>         m - Strona Gˆ¢wna.
+<46> ms ustawia pozycj© myszy natomiast naci˜nij [n] aby w tym miejscu zostaˆo wykonane klikni©cie.
 <47>*===========================================================================*
-<48>|  Klawisz odpowiedzialny za wÂˆÄ„czenie pÂ©tli: 
+<48>|  Klawisz odpowiedzialny za wˆ¥czenie p©tli: 
 <49>|  Ostatnio uzywany plik z zapisanymi wektorami: 
-<50>|  Nazwy wszystki zapisanych plikË˜w z wektorami:
-<51>Zabezpieczenia chroniÄ„ programu przed wykryciem przez programy Anti-Cheat.
-<52>PonieÄ¾ej znajduje siÂ© wyjaÂ˜nienie jak dane zabezpieczenie dokÂˆadnie dziaÂˆa
+<50>|  Nazwy wszystki zapisanych plik¢w z wektorami:
+<51>Zabezpieczenia chroni¥ programu przed wykryciem przez programy Anti-Cheat.
+<52>Ponie¾ej znajduje si© wyja˜nienie jak dane zabezpieczenie dokˆadnie dziaˆa
 <53>BRAK: 
-<54>Nic nie zmienia klika w idealnych odstÂ©pach czasu co zwiÂ©ksza szanse na wykrycie przez Anty-Cheat.
-<55>â€”REDNIE: 
+<54>Nic nie zmienia klika w idealnych odst©pach czasu co zwi©ksza szanse na wykrycie przez Anty-Cheat.
+<55>—REDNIE: 
 <56>
 <57>ZAAWANSOWANE: 
 <58>
 <Kal_czasu>
-<1>Podaj liczbÂ© lat: 
-<2>Podaj liczbÂ© dni: 
-<3>Podaj liczbÂ© godzin: 
-<4>Podaj liczbÂ© minut: 
-<5>Podaj liczbÂ© sekund: 
+<1>Podaj liczb© lat: 
+<2>Podaj liczb© dni: 
+<3>Podaj liczb© godzin: 
+<4>Podaj liczb© minut: 
+<5>Podaj liczb© sekund: 
 <6>Liczba lat: 
 <7>  [Lata.Dni]
 <8>Liczba dni: 
@@ -184,44 +184,56 @@
 <13>  [Minuty.Sekundy]
 <14>Liczba sekund: 
 <15>Liczba milisekund: 
-<16>NaciÂ˜nij ENTER aby liczyâ€  ponownie || x-koniec programu
+<16>Naci˜nij ENTER aby liczy† ponownie || x-koniec programu
 <main>
-<1>Å¥adowanie...
+<1>adowanie...
 <2>Ustawienia klasa przypisana
-<3>Ustawienia programu zaÂˆadowano
+<3>Ustawienia programu zaˆadowano
 <4>Auto Clicker klasa przypisana
 <5>WPL klasa przypisana
-<6>Kalkulator do walut zaÂˆadowano
-<7>Kursy walut zaÂˆodowane
-<8>Zczytane nazwy plikË˜w z wektorami poprawnie
-<9>Jaki ostatni plik z wektorami byÂˆ uÄ¾ywany zaÂˆadowano
-<10>Kalkulator czasu zaÂˆadowany
-<11>Å¥adowanie zakoÃ¤czone.
+<6>Kalkulator do walut zaˆadowano
+<7>Kursy walut zaˆodowane
+<8>Zczytane nazwy plik¢w z wektorami poprawnie
+<9>Jaki ostatni plik z wektorami byˆ u¾ywany zaˆadowano
+<10>Kalkulator czasu zaˆadowany
+<11>adowanie zakoäczone.
 <12> Wersja Programu: 
 <13>+================ Wybierz Program ==============+
 <14>|    1 - Wielofunkcyjny kalkulator              |
 <15>|    2 - Auto Clicer                            |
 <16>|    3 - Kalkulator jednostek czasu             |
-<17>|    4 - Ustawienia                             |
-<18>|    r - Reset do ustawieÃ¤ poczÄ„tkowych         |
-<19>x - ZakoÃ¤cz program
-<20>                             MENU GÅ¥Å•WNE
+<17>|    u - Ustawienia                             |
+<18>|    r - Reset do ustawieä pocz¥tkowych         |
+<19>x - Zakoäcz program
+<20>                             MENU GàWNE
 <21>|  1 - Dodawanie                               |
 <22>|  2 - Odejmowanie                             |
-<23>|  3 - MnoÄ¾enie                                |
+<23>|  3 - Mno¾enie                                |
 <24>|  4 - Dzielenie                               |
-<25>|  5 - PotÂ©gowanie                             |
+<25>|  5 - Pot©gowanie                             |
 <26>|  6 - Pierwiastkowanie                        |
 <27>|  7 - Waluty  (Kurs walut z: 
 <28>|  8 - Zmiana tekstu na kod binarny            |
 <29>|  9 - Tablica ASCII                           |
-<30>|  % - DziaÂˆania procentowe                    |
+<30>|  % - Dziaˆania procentowe                    |
 <31>|  ? - Pomoc                                   |
-<32>|  m - Strona GÂˆË˜wna                           |
-<33>Napisz, nr. dziaÂˆania: 
-<34>----Kod dziaÂˆania jest nie poprawny!!! Dokonaj wyboru ponownie----
+<32>|  m - Strona Gˆ¢wna                           |
+<33>Napisz, nr. dziaˆania: 
+<34>----Kod dziaˆania jest nie poprawny!!! Dokonaj wyboru ponownie----
 <35>----Numer programu jest nie poprawny!!! Dokonaj wyboru ponownie----
 <36>+===============================================+
 <37>|                                               |
 <38>)      |
 <39>+==============================================+
+<40>|    ? - Pomoc / Informacje                     |
+<41> Tak samo z r¢¾nymi pytaniami piszcie na serwerze Discord (informacje poni¾ej).
+<42> Wszystkie zapisane plliki z miejscami klikni©† bota na ekranie znajdziecie w folderze (Pliki_Wektorow_Save).
+<43> Je˜li kto˜ chce usun¥† nie potrzebny plik z wektorami to musi zrobi† to r©cznie najpierw wchodzimy do
+<44> folderu podanego wy¾ej i usuwamy niechciany plik. Nast©pnie w gˆ¢wnym folderze znajduj© si© plik o nazwie
+<45> (nazwy_plikow_z_zapisanymi_wektorami.txt) otwieramy go i usuwamy nazw© pliku kt¢ry usuneli˜my. GOTOWE!
+<46> Pliki z wektorami mo¾emy r©cznie edytowa† ALE ZALECAM OSTRO½NO— pozycj© myszy s¥ opisane X = <xxx>Y = <xxx>
+<47> a moment w kt¢rym bot ma wykona† klikni©cie nazywa si© "klikniecie". Wi©c je˜li niechcemy danej warto˜ci albo
+<48> chcemy pomin¥† dany etap wystarczy wykasowa† to co nas interesuje na koniec zapisa† plik i gotowe.
+<49> Je˜li co˜ si© stanie z programem albo si© zawiesi najlepiej go zresetowa† gdy to nie pomo¾e to najszybciej b©dzie
+<50> pobra† caˆy na nowo czy to z serwera Discord czy z GitHub je˜li dalej to nie pomo¾e poinformuj nas na serwerze DC
+<51>*====================================================================================================================*

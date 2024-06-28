@@ -202,7 +202,7 @@
 <14>|    1 - Multifunctional calculator             |
 <15>|    2 - Auto Clicker                           |
 <16>|    3 - Time unit calculator                   |
-<17>|    4 - Settings                               |
+<17>|    u - Settings                               |
 <18>|    r - Reset to default settings              |
 <19>x - Exit program
 <20>                                MAIN MENU
@@ -225,3 +225,15 @@
 <37>|                                               |
 <38>) |
 <39>+=================================================+
+<40>|    ? - Help / Information                     |
+<41> The same applies to various questions; write on the Discord server (information below).
+<42> All saved files with the bot's click locations on the screen can be found in the (Pliki_Wektorow_Save) folder.
+<43> If someone wants to delete an unnecessary vector file, it must be done manually. First, go to the
+<44> folder mentioned above and delete the unwanted file. Then, in the main folder, there is a file named
+<45> (nazwy_plikow_z_zapisanymi_wektorami.txt). Open it and remove the name of the file you deleted. DONE!
+<46> Vector files can be edited manually BUT BE CAREFUL. The mouse positions are described as X = <xxx>Y = <xxx>
+<47> and the moment when the bot is supposed to click is called "klikniecie". So, if you don't want a particular value or
+<48> want to skip a certain stage, just delete what interests you, save the file, and it's done.
+<49> If something happens with the program or it freezes, it is best to reset it. If that doesn't help, the quickest solution is to
+<50> download the whole thing again from either the Discord server or GitHub. If it still doesn't help, inform us on the DC server.
+<51>*=================================================================================================================================*
