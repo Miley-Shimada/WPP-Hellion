@@ -1,13 +1,14 @@
 ﻿
-                         /  WPP Hellion 1.01  \
+                         /  WPP Hellion 1.02  \
 
 
 
                              ↓ Co Nowego ↓
 *=========================================================================*
-- Jest to połączenie 3 programów w jeden (WPL, Auto Clicer, Kalkulator czasu)
-- Poprzednie programy (WPL, Auto Clicer, Kalkulator czasu) nie będa już
-wspierane osobno, aktulizacje bedą się odbywały tylko i wyłącznie w WPP Hellion
+- Dodanie do Auto Clickera funkcji klikania w dane miejsca na ekranie
+wraz z podanymi odstępami czasowymi (w ms) oraz możliwość włączenia pętli
+- Dodanie tłumaczenia programu na język Angielski
+- Dodanie Informacji w Menu Głównym pod klawiszem "?"
 *=========================================================================*
  MIŁEGO KORZYSTANIA 😀
 
@@ -20,10 +21,11 @@ wspierane osobno, aktulizacje bedą się odbywały tylko i wyłącznie w WPP Hel
    *===================================================================*
    |                                                                   |
    |  Wrazie problemów zgłaszać je na kanale ┇❗┇report                 |
+   |  lub na ┇❔┇questions                                             |
    |                                                                   |
    |  Program oddany do użytku dla członków grupy ==Legion==.          |
    |  Program chroniony prawami autorskimi przed udostępnianiem.       |
    |  Pobierająć program wyrażasz zgodę na warunki umowy dotyczacych   |
-   |  użytkowania z programu.                                          |
+   |  użytkowania programu.                                            |
    |                                                                   |
    *===================================================================*
