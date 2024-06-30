@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>
+
+void downloadYouTubeAsMP3(const std::string &url, const std::string &outputFile) {
+    std::string command = "youtube-dl -x --audio-format mp3 -o \"" + outputFile + ".%(ext)s\" " + url;
+    int result = system(command.c_str());
+    if (result == 0) {
+        std::cout << "Download and conversion successful!" << std::endl;
+    } else {
+        std::cerr << "An error occurred." << std::endl;
+    }
+}
+
+int main() {
+    std::string url;
+    std::cout << "Enter YouTube URL: ";
+    std::cin >> url;
+    std::string outputFile;
+    std::cout << "Enter output file name (without extension): ";
+    std::cin >> outputFile;
+
+    downloadYouTubeAsMP3(url, outputFile);
+
+    return 0;
+}
